@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="277.0" prefWidth="298.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="54.0" style="-fx-background-color: EDEBEB;" text="Login" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font></Label>
+   <AnchorPane prefHeight="200.0" prefWidth="258.0">
+      <children>
+         <Label fx:id="lblusuario" layoutX="14.0" layoutY="23.0" text="Usuario">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Label>
+         <TextField fx:id="Usuario" layoutX="86.0" layoutY="14.0" prefHeight="38.0" prefWidth="159.0" promptText="Usuario" />
+         <Label fx:id="lblcontraseña" layoutX="4.0" layoutY="65.0" prefHeight="26.0" prefWidth="96.0" text="Contraseña">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Label>
+         <PasswordField fx:id="Contraseña" layoutX="85.0" layoutY="59.0" prefHeight="38.0" prefWidth="159.0" promptText="Contraseña" />
+         <ComboBox fx:id="cbRol" layoutX="65.0" layoutY="101.0" prefWidth="150.0" />
+          <Button layoutX="33.0" layoutY="162.0" onAction="#onIngresarButtonClick" text="Ingresar" />
+         <Button layoutX="165.0" layoutY="162.0" mnemonicParsing="false" onAction="#onsalirButtonClick" text="Salir" />
+      </children>
+   </AnchorPane>
+</VBox>
